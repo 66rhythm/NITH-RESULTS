@@ -7,7 +7,7 @@ A website for checking the result of NIT Hamirpur Students
 ## Contributors
 
 [TANYA BHANDARI](https://github.com/66rhythm) <br/>
-[DEEKSHA SHARMA](https://github.com/Deeksha2501)
+[DEEKSHA SHARMA](https://github.com/Deeksha2501)<br/>
 [ARPITA TIWARI](https://github.com/Arpita309)
 
 
