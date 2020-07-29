@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <title>NITH RESULTS</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b68197f8e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="title">
+    NIT HAMIRPUR RESULTS SEARCH ENGINE
+  </div>
+  <div class="ser-box">
+    <div>
+     <div class="search">
+       <input type="search" name="search" id="search" onchange="check()" onclick="check()" placeholder='Search using Name , RollNo , Branch' />
+       <label for="search">Search using Name , RollNo , Branch</label>
+     </div>
+
+    <div class="branch-changer">
+        <select name="branch" id="branch" title="Branch" onchange="check()">
+          <option value="Architecture">
+            Architecture
+          </option>
+          <option value="Chemical">
+            Chemical Engineering
+          </option>
+          <option value="Civil">
+            Civil Engineering
+          </option>
+          <option selected value="Cse">Computer Science & Engineeing</option>
+          <option value="Cse_dual">Cse(Dual Degree)</option>
+          <option value="Ece">Electronics & Comm. Engineering</option>
+          <option value="Ece_dual">Ece(Dual Degree)</option>
+          <option value="Electrical">Electrical Engineering</option>
+          <option value="Material">Material Science & Engineering</option>
+          <option value="Mechanical">Mechanical Engineering</option>
+          <option value="FullCollege">Full College</option>
+          <option value="FullYear">Full Year</option>
+        </select>
+
+      </div>
+      <div class="res">
+      <div class="batch-changer">
+        <select name="batch" id="batch" title="Batch" onchange="check()">
+          <option  value="19">2019-2023</option>
+          <option selected value="18">2018-2022</option>
+          <option value="17">2017-2021</option>
+          <option value="16">2016-2020</option>
+        </select>
+      </div>
+      <div class="cg-sg"  title="sort: CGPA / SGPA" onchange="check()">
+        <select id="cg-sg" name="c-toggle" class="c-toggle">
+          <option selected value="cg">CGPA</option>
+          <option value="sg">SGPA</option>
+        </select>
+      </div>
+      <div class="sort"  title="sort: Abhabatically / Roll-no Wise" onchange="check()">
+        <select id="sort"  class="sort-toggle">
+          <option selected value="rank">Rank-wise</option>
+          <option value="alpha">Alphabatically</option>
+          <option value="roll">Roll-no Wise</option>
+        </select>
+      </div>
+      </div>
+    </div>
+      <div class="specific">
+        Get your Result though binary search
+        <form style="display: inline-block;">
+        <input type="number" name="roll_num" id="roll_num" placeholder="Roll-no" min="0">
+        <button type="submit" class="specific_roll_submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+
+      </div>
+      <div class="table_head">
+      <div class="tbl-row heading">
+        <div class="table-cell name tot">
+          <div class="head total">Total Results : 30</div>
+        </div>
+        <!-- <div class="table-cell branch">
+          <div class="head"></div>
+        </div>
+        <div class="table-cell cg">
+          <div class="head"></div> 
+        </div>
+        <div class="table-cell rank">
+        <div class="head"></div>
+        </div> -->
+      </div>
+      <div class="tbl-row heading">
+        <div class="table-cell name">
+          <div class="head">Name</div>
+        </div>
+        <div class="table-cell branch">
+          <div class="head">Current Year</div>
+        </div>
+        <div class="table-cell cg">
+          <div class="head">Grade Point</div> 
+        </div>
+        <div class="table-cell rank">
+        <div class="head">Rank</div>
+        </div>
+        <hr>
+      </div>
+    </div>
+      <div id="table" >
+        <p class="nothing">Oops! Nothing to show. Try with a diffrent keyword! :)</p>
+        <div class="table-row">
+          <!-- <div class="table-cell name">
+            <div class="head">185094</div>
+            <div class="p">Deeksha Sharma</div>
+          </div>
+          <div class="table-cell branch">
+            <div class="head">Year : 2</div>
+            <div class="p">Computer Science and Engineering</div>
+          </div>
+          <div class="table-cell cg">
+            <div class="head">CGPA : 9.5</div>
+            <div class="p">SGPA : 10</div>
+          </div>
+          <div class="table-cell rank">
+          <div class="r head">
+            3
+          </div>
+          <div class="p prank">invisible</div>
+          </div>
+          <hr>
+        </div>
+        <div class="table-row">
+          <div class="table-cell name">
+            <div class="head">Dummy Sharma</div>
+            <div class="p">Nit Hamirpur</div>
+          </div>
+          <div class="table-cell branch">
+            <div class="head">Year : 2</div>
+            <div class="p">Computer Science and Engineering</div>
+          </div>
+          <div class="table-cell cg">
+            <div class="head">CGPA : 9.5</div>
+            <div class="p">SGPA : 10</div>
+          </div>
+          <div class="table-cell rank">
+          <div class="r head">
+            3
+          </div>
+          <div class="p prank">invisible</div>
+          </div>
+          <hr>
+        </div>-->
+       
+        
+        
+      </div>
+      </div>
+      <div class="footer">
+        <p><a target="_blank" class="git-link" href="https://github.com/Deeksha2501/NITH-Results">Copyright &copy; 2020</p></a>
+          <p class="credit">  Data fetched from <a target="_blank" href="https://github.com/srbcheema1/Nith_results">github.com/srbcheema1/Nith_results</a>
+        </p>
+      </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
